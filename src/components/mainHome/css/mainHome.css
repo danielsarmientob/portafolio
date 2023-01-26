@@ -1,0 +1,4 @@
+.main_header {
+    height: var(--heightHeader);
+    border-bottom: 1px dashed var(--whiteBorder);
+}

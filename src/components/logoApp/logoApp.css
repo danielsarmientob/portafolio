@@ -1,0 +1,17 @@
+    
+.logo {
+    height: var(--heightHeader);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo svg{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.logo svg path {
+    fill: var(--whiteBorder);
+}

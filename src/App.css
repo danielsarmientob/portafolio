@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  --font-base: 'IBM Plex Mono', monospace;
+  --font-base2: 'Bebas Neue', cursive;
+  --body-blod01: 700 1rem/1.7rem var(--font-base);
+  --body-light2: 300 0.9375rem/1.59375rem var(--font-base);
+  --body-light3: 300 1rem/1.7rem var(--font-base);
+  --body-light4: 300 1.1rem/1.87rem var(--font-base);
+  --bebas-bold01: 700 5rem/8.5rem var(--font-base2); 
+  --gray01: rgb(39, 35, 37);
+  --skyblue01: rgb(71, 207, 237);
+  --hoverElements: rgb(48, 52, 53);
+  --whiteBorder: rgb(255, 246, 230);
+  --heightHeader: 4.1875rem;
+  --heightSocial: 4.0625rem; 
+}
+
+body {
+  background-color: var(--gray01);
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
