@@ -1,0 +1,99 @@
+.cont_select_tr {
+    position: relative;
+    margin: auto;
+    height: 100%;
+    max-width: 150px;
+    border-left: 1px dashed var(--whiteBorder);
+    border-right: 1px dashed var(--whiteBorder);
+    padding-top: 1px;
+    box-sizing: border-box;
+}
+
+
+
+.select_traduction {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    gap: .8rem;
+}
+
+
+.select_traduction:focus {
+    outline: var(--whiteBorder) 2px solid;
+}
+.select_traduction span {
+    font: var(--body-light3);
+    color: var(--whiteBorder);
+}
+
+
+.select_traduction svg {
+    width: 1rem;
+    height: 1rem;
+    transition: transform .3s;
+}
+.select_traduction svg polygon {
+    stroke: var(--whiteBorder);
+    fill: var(--whiteBorder);
+}
+
+.select_traduction .select-active {
+    transform: rotate(-180deg);
+}
+
+.select_options {
+    position: absolute;
+    opacity: 0;
+    background-color: var(--hoverElements);
+    margin-top: 1.5rem;
+    border: 1px dashed var(--whiteBorder);
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+    transition: opacity .5s ease-in;
+}
+
+.select_options.options-active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.select_options::before {
+    content: " ";
+    position: absolute;
+    transform: rotate(45deg);
+    top: -.6rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px dashed var(--whiteBorder);
+    border-right: 1px solid var(--hoverElements);
+    border-bottom: 1px solid var(--hoverElements);
+    background-color: var(--hoverElements);
+}
+
+.select_options span {
+    font: var(--body-blod01);
+    color: var(--skyblue01);
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    transition: color .3s;
+}
+
+.select_options span:hover {
+    color: var(--whiteBorder);
+}
+

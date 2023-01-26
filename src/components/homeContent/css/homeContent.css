@@ -1,0 +1,41 @@
+.content_body {
+    padding: 2rem 2rem 0 2rem;
+}
+.content_body .title_body {
+    font: var(--bebas-bold01);
+    color: var(--whiteBorder);
+}
+
+.text_descripcion {
+    font: var(--body-light4);
+    color: var(--whiteBorder);
+}
+
+.text_descripcion span {
+    font: var(--body-blod01);
+    font-size: 1.2rem;
+    color: var(--skyblue01);
+    /* color: var(--whiteBorder); */
+}
+
+.seccion_descripcion {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.seccion_descripcion P {
+    max-width: 500px;
+}
+
+.imagen_descripcion {
+    /* background-color: red; */
+    flex: 1;
+    width: 200px;
+    min-height: 300px;
+    background: url('../../../assets/bck_base.png');
+}
+
+.imagen_descripcion svg {
+    width: 50px;
+    height: 50px;
+}

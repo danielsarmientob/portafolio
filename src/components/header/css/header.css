@@ -1,0 +1,83 @@
+.header {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 1px dashed var(--whiteBorder);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    flex: 1;
+    border-top: 1px dashed var(--whiteBorder);
+    border-bottom: 1px dashed var(--whiteBorder);
+    display: flex;
+}
+
+.menu_items {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.social {
+    display: flex;
+    height: var(--heightSocial);
+}
+/* 
+.social  div {
+    border: 1px dashed var(--gray01);
+} */
+.social_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 25%;
+    height: 100%;
+    border-right: 1px dashed var(--whiteBorder);
+    transition: background .3s;
+}
+.social div:last-child {
+    border-right: none;
+}
+
+.social_item svg {
+    color: white;
+}
+.social_item svg {
+    height: 24px;
+    width: 24px;
+}
+.social_item svg path{
+    fill: var(--whiteBorder);
+    transition: fill .3s;
+}
+
+.social_item:hover {
+    background-color: var(--hoverElements);
+}
+.social_item:hover.social_item svg path{
+    fill: var(--skyblue01);
+}
+
+.social_item .title_socialItem {
+    position: absolute;
+    font: var(--body-light2);
+    color: var(--whiteBorder);
+    opacity: 0;
+    border: 1px solid var(--whiteBorder);
+    background-color: var(--hoverElements);
+    top: -1rem;
+    left: 0px;
+    padding: 3px 10px;
+    transition: opacity .3s;
+}
+
+.social_item:hover .title_socialItem {
+    opacity: 1;
+}
